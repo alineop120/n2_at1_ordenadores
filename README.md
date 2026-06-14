@@ -1,14 +1,29 @@
-# Análise de Algoritmos – Algoritmos de Ordenação
+# 📊 Análise de Algoritmos – Algoritmos de Ordenação
 
 Este projeto foi desenvolvido para a disciplina de **Análise de Algoritmos**, com o objetivo de comparar o tempo de execução dos algoritmos de ordenação **Bubble Sort**, **Merge Sort** e **Quick Sort**.
 
 A atividade consiste em gerar vetores aleatórios de diferentes tamanhos, executar os três algoritmos sobre os mesmos dados de entrada e registrar os tempos obtidos em milissegundos.
 
-## Objetivo
+## 📌 Sumário
+
+- [Objetivo](#-objetivo)
+- [Algoritmos analisados](#-algoritmos-analisados)
+- [Tamanhos dos vetores](#-tamanhos-dos-vetores)
+- [Estrutura do projeto](#-estrutura-do-projeto)
+- [Descrição dos arquivos](#-descrição-dos-arquivos)
+- [Relatório](#-relatório)
+- [Compilação](#-compilação)
+- [Execução](#-execução)
+- [Resultados obtidos](#-resultados-obtidos)
+- [Análise geral](#-análise-geral)
+- [Ferramentas utilizadas](#-ferramentas-utilizadas)
+- [Autoria](#-autoria)
+
+## 🎯 Objetivo
 
 Medir e comparar o desempenho dos algoritmos Bubble Sort, Merge Sort e Quick Sort em vetores com diferentes quantidades de elementos, observando a influência do tamanho da entrada no tempo de execução.
 
-## Algoritmos analisados
+## 🧮 Algoritmos analisados
 
 Os algoritmos utilizados foram:
 
@@ -16,7 +31,7 @@ Os algoritmos utilizados foram:
 * Merge Sort
 * Quick Sort
 
-## Tamanhos dos vetores
+## 📏 Tamanhos dos vetores
 
 Foram utilizados vetores aleatórios com os seguintes tamanhos:
 
@@ -26,7 +41,7 @@ Foram utilizados vetores aleatórios com os seguintes tamanhos:
 * 1000 elementos
 * 10000 elementos
 
-## Estrutura do projeto
+## 🗂️ Estrutura do projeto
 
 ```text
 ORDENADORES/
@@ -48,7 +63,7 @@ ORDENADORES/
 └── README.md
 ```
 
-## Descrição dos arquivos
+## 📁 Descrição dos arquivos
 
 * `src/main.c`: arquivo principal do programa, responsável por gerar os vetores, copiar os dados, chamar os algoritmos, medir os tempos e gravar os resultados.
 * `src/ordenadores.h`: arquivo de cabeçalho com os protótipos das funções utilizadas no projeto.
@@ -59,7 +74,13 @@ ORDENADORES/
 * `img-graficos/`: pasta com o gráfico comparativo.
 * `relatorio/`: pasta com o relatório da atividade.
 
-## Compilação
+## 📄 Relatório
+
+O relatório final da atividade está disponível no arquivo:
+
+[Relatório final em PDF](relatorio/relatorio-ordenadores.pdf)
+
+## ⚙️ Compilação
 
 Para compilar o projeto, execute o comando abaixo na pasta raiz do projeto:
 
@@ -67,7 +88,7 @@ Para compilar o projeto, execute o comando abaixo na pasta raiz do projeto:
 gcc src/main.c src/algoritmos/bubble-sort.c src/algoritmos/merge-sort.c src/algoritmos/quick-sort.c -o bin/ordenadores
 ```
 
-## Execução
+## ▶️ Execução
 
 Após compilar, execute:
 
@@ -81,7 +102,7 @@ O programa irá gerar o arquivo:
 resultados/resultados.csv
 ```
 
-## Resultados obtidos
+## 📊 Resultados obtidos
 
 Os resultados obtidos na execução foram:
 
@@ -91,24 +112,32 @@ Os resultados obtidos na execução foram:
 |              300 |                0 |               0 |               0 |
 |              500 |                0 |               0 |               0 |
 |             1000 |                2 |               0 |               0 |
-|            10000 |              186 |               3 |               1 |
+|            10000 |              180 |               3 |               1 |
 
 Os tempos iguais a 0 ms ocorreram porque a execução foi muito rápida para a precisão da função de medição utilizada.
 
-## Análise geral
+## 📈 Análise geral
 
 Os resultados mostram que o Bubble Sort apresentou maior crescimento no tempo de execução conforme o tamanho do vetor aumentou. Esse comportamento está relacionado à sua complexidade média **O(n²)**.
 
 Já os algoritmos Merge Sort e Quick Sort apresentaram tempos menores para entradas maiores, pois possuem complexidade média **O(n log n)**, sendo mais eficientes para grandes volumes de dados.
 
-## Ferramentas utilizadas
+### Gráfico comparativo
+
+O gráfico abaixo apresenta a comparação entre os tempos de execução dos algoritmos:
+
+<p align="center">
+  <img src="img-graficos/grafico-ordenadores.jpg" alt="Gráfico comparativo dos algoritmos de ordenação" width="600">
+</p>
+
+## 🛠️ Ferramentas utilizadas
 
 * Linguagem C
 * Visual Studio Code
 * GCC
 * Microsoft Excel ou ferramenta equivalente para geração do gráfico
 
-## Autoria
+## 👥 Autoria
 
 Trabalho desenvolvido em grupo para a disciplina de **Análise de Algoritmos**.
 
