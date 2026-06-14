@@ -1,0 +1,6 @@
+Tamanho;Bubble Sort (ms);Merge Sort (ms);Quick Sort (ms)
+100;0;0;0
+300;0;1;0
+500;0;0;0
+1000;1;1;0
+10000;180;3;1
