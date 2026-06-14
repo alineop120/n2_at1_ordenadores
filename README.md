@@ -115,6 +115,6 @@ Trabalho desenvolvido em grupo para a disciplina de **Análise de Algoritmos**.
 Integrantes:
 
 * Aline Oliveira de Pinho
-* Breno
-* Caryni
-* Nichollas
+* Breno Gonçalves Gomes
+* Cariny Saldanha Oliveira
+* Níchollas Pereira Holz
