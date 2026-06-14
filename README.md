@@ -63,7 +63,7 @@ ORDENADORES/
 └── README.md
 ```
 
-## 📁 Descrição dos arquivos
+### Descrição dos arquivos
 
 * `src/main.c`: arquivo principal do programa, responsável por gerar os vetores, copiar os dados, chamar os algoritmos, medir os tempos e gravar os resultados.
 * `src/ordenadores.h`: arquivo de cabeçalho com os protótipos das funções utilizadas no projeto.
